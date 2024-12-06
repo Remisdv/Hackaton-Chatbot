@@ -1,0 +1,94 @@
+/* Styles pour le composant ChatCoach */
+.ChatCoach {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* Titre du chat coach */
+.ChatCoach h2 {
+  margin-bottom: 20px;
+  color: #4a4a4a; /* Couleur de texte gris foncé */
+}
+
+/* Conteneur principal du chat coach */
+.ChatCoach-container {
+  width: 100%;
+  background-color: #f9f9f9; /* Couleur de fond gris clair */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 8px; /* Bords arrondis */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section des messages du chat coach */
+.ChatCoach-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Styles pour chaque message */
+.ChatCoach-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px; /* Bords arrondis */
+}
+
+/* Message de l'utilisateur */
+.ChatCoach-message.user {
+  width: 40%;
+  margin-top: 1%;
+  margin-right: 3%;
+  background-color: #2b90b8; /* Fond bleu */
+  color: white; /* Texte en blanc */
+  align-self: flex-end; /* Aligner à droite */
+  text-align: left;
+  margin-left: auto;
+}
+
+/* Message du coach */
+.ChatCoach-message.coach {
+  width: 40%;
+  margin-top: 1%;
+  margin-left: 3%;
+  background-color: #ff7f50; /* Fond corail */
+  color: white; /* Texte en blanc */
+  align-self: flex-start; /* Aligner à gauche */
+  text-align: left;
+  margin-right: auto;
+}
+
+/* Formulaire de saisie du chat coach */
+.ChatCoach-input-form {
+  display: flex;
+  width: 100%;
+}
+
+/* Champ de saisie du message utilisateur */
+.ChatCoach-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 4px; /* Bords arrondis */
+  margin-right: 10px;
+}
+
+/* Bouton d'envoi du message utilisateur */
+.ChatCoach-submit-button {
+  padding: 10px 20px;
+  background-color: #4a4a4a; /* Fond gris foncé */
+  color: white; /* Texte en blanc */
+  border: none;
+  border-radius: 4px; /* Bords arrondis */
+  cursor: pointer;
+}
+
+/* Effet de survol pour le bouton d'envoi */
+.ChatCoach-submit-button:hover {
+  background-color: #333; /* Fond gris plus foncé */
+}

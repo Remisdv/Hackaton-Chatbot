@@ -1,0 +1,62 @@
+/* Conteneur principal de l'agenda */
+.agenda {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  width: 100%;
+  max-width: 400px;
+  background-color: white;
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  padding: 20px;
+  z-index: 3000; /* Z-index élevé */
+}
+
+/* En-tête de l'agenda */
+.agenda-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Titre de l'agenda */
+.agenda h2 {
+  margin: 0;
+  color: #333; /* Couleur du texte */
+}
+
+/* Bouton pour fermer l'agenda */
+.close-agenda {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Liste des créneaux de l'agenda */
+.agenda ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Chaque élément de la liste */
+.agenda li {
+  margin-bottom: 10px;
+}
+
+/* Bouton de réservation de créneau */
+.agenda button {
+  margin-left: 10px;
+  padding: 5px 10px;
+  background-color: #4a4a4a; /* Fond gris foncé */
+  color: white; /* Texte en blanc */
+  border: none;
+  border-radius: 4px; /* Bords arrondis */
+  cursor: pointer;
+}
+
+/* Effet de survol pour le bouton de réservation */
+.agenda button:hover {
+  background-color: #333; /* Fond gris plus foncé */
+}

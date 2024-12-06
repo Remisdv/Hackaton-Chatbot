@@ -1,0 +1,12 @@
+/* Styles globaux du corps de la page */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif; /* Utilisation de la police Roboto */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Styles pour le code source */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}

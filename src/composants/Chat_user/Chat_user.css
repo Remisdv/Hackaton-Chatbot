@@ -1,0 +1,89 @@
+/* Styles pour le composant ChatUser */
+.ChatUser {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
+
+/* Titre du chat utilisateur */
+.ChatUser h2 {
+  margin-bottom: 20px;
+  color: #4a4a4a; /* Couleur de texte gris foncé */
+}
+
+/* Conteneur principal du chat utilisateur */
+.ChatUser-container {
+  width: 100%;
+  background-color: #f9f9f9; /* Couleur de fond gris clair */
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 8px; /* Bords arrondis */
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section des messages du chat utilisateur */
+.ChatUser-messages {
+  flex: 1;
+  overflow-y: auto;
+  margin-bottom: 20px;
+}
+
+/* Styles pour chaque message */
+.ChatUser-message {
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 8px; /* Bords arrondis */
+}
+
+/* Message de l'utilisateur */
+.ChatUser-message.user {
+  width: 40%;
+  margin-top: 1%;
+  margin-right: 3%;
+  background-color: #2b90b8; /* Fond gris foncé */
+  color: white; /* Texte en blanc */
+  align-self: center; /* Aligner au centre */
+  text-align: center;
+  margin-left: auto;
+}
+
+/* Message du chatbot */
+.ChatUser-message.chatbot {
+  background-color: #d1d1d1; /* Fond gris clair */
+  color: black; /* Texte en noir */
+  align-self: flex-end; /* Aligner à droite */
+}
+
+/* Formulaire de saisie du chat utilisateur */
+.ChatUser-input-form {
+  display: flex;
+  width: 100%;
+}
+
+/* Champ de saisie du message utilisateur */
+.ChatUser-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc; /* Bordure */
+  border-radius: 4px; /* Bords arrondis */
+  margin-right: 10px;
+}
+
+/* Bouton d'envoi du message utilisateur */
+.ChatUser-submit-button {
+  padding: 10px 20px;
+  background-color: #4a4a4a; /* Fond gris foncé */
+  color: white; /* Texte en blanc */
+  border: none;
+  border-radius: 4px; /* Bords arrondis */
+  cursor: pointer;
+}
+
+/* Effet de survol pour le bouton d'envoi */
+.ChatUser-submit-button:hover {
+  background-color: #333; /* Fond gris plus foncé */
+}
